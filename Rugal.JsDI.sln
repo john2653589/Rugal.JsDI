@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rugal.JsDI", "Rugal.JsDI\Rugal.JsDI.csproj", "{2B09E8F4-24C6-418A-984E-243D4A4E5461}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rugal.JsDI.Test", "Rugal.JsDI.Test\Rugal.JsDI.Test.csproj", "{91142188-CD59-4B9E-8899-D2FB4BE0166B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B09E8F4-24C6-418A-984E-243D4A4E5461}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B09E8F4-24C6-418A-984E-243D4A4E5461}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B09E8F4-24C6-418A-984E-243D4A4E5461}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B09E8F4-24C6-418A-984E-243D4A4E5461}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91142188-CD59-4B9E-8899-D2FB4BE0166B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91142188-CD59-4B9E-8899-D2FB4BE0166B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91142188-CD59-4B9E-8899-D2FB4BE0166B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91142188-CD59-4B9E-8899-D2FB4BE0166B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5CC1A01F-40DB-4D85-B8A2-F48EAC018F11}
+	EndGlobalSection
+EndGlobal
