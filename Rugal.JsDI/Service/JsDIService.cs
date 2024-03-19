@@ -1,4 +1,5 @@
-﻿using System.Text.Json;
+﻿using Microsoft.AspNetCore.Html;
+using System.Text.Json;
 
 namespace Rugal.JavaScriptDataInject.Service
 {
@@ -13,7 +14,7 @@ namespace Rugal.JavaScriptDataInject.Service
             WithDefaultStore(JsStoreKey);
             WithDefaultStore(QueryKey);
         }
-        public string RenderJs()
+        public IHtmlContent RenderJs()
         {
             var JsVars = new List<string> { };
             foreach (var Store in JsStore)
@@ -21,7 +22,8 @@ namespace Rugal.JavaScriptDataInject.Service
                 var Js = $"const {Store.Key} = {JsonSerializer.Serialize(Store.Value)};";
                 JsVars.Add(Js);
             }
-            var Result = string.Join('\n', JsVars);
+            var JsResult = string.Join('\n', JsVars);
+            var Result = new HtmlString(JsResult);
             return Result;
         }
         public JsDIService AddStore(string StoreKey, string Key, object Value)
